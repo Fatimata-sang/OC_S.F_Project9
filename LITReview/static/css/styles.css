@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'journalregular';
+    src: url('fonts/journal-font-regular/journal-webfontjournal.eot');
+    src: url('fonts/journal-font-regular/journal-webfontjournal.eot?#iefix') format('embedded-opentype'),
+         url('fonts/journal-font-regular/journal-webfontjournal.woff2') format('woff2'),
+         url('fonts/journal-font-regular/journal-webfontjournal.woff') format('woff'),
+         url('fonts/journal-font-regular/journal-webfontjournal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+header{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+header #title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1{
+    text-align: center;
+    font-family: journalregular;
+    font-size: 85px;
+    font-weight: lighter;
+    position: relative;
+    top: 180px;
+    left: 45px;
+}
+
+header #banner{
+    height: auto;
+    width: auto;
+}
+
+header nav{
+    margin-top: 70px;
+    text-align: end;
+}
+
+header nav a{
+    padding-right: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+}
+
+.ticket, .review{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    padding: 0% 5%;
+    border: solid;
+    border-color: gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review{
+    border-width: 2px;
+}
+
+.ticket{
+    box-shadow: 10px 5px 5px gray;
+    border-width: 1px;
+}
+
+.review > .ticket{
+    margin-top: 15px;
+}
+
+.ticket h3, .review h3{
+    text-align: center;
+}
+
+.star{
+    color: rgba(90,58,61,255);
+}
+
+.double-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ticket-information, .review-information{
+    padding-top: -15px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2{
+    font-weight: normal;
+    margin-left: 10%;
+}
+
+#login h2, #signup h2{
+    margin-left: 0%;
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+form input{
+    padding: 15px;
+}
+
+.form-check-label{
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.errorlist li{
+    color:rgb(97, 3, 3);
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.button-type{
+    color: black;
+    border-radius: 8px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: rgb(161, 161, 161);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-decoration: none;
+    width: 160px;
+}
+
+.button-type:hover{
+    background-color: rgb(168, 168, 168);
+    color: black;
+}
+
+.button-type:visited{
+    color: black;
+}
+
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#login div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup .button-type{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article img{
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#preview-img {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.image-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#follow-template{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#choose-user-to-follow{
+    display: flex;
+    flex-direction: row;
+}
+
+#choose-user-to-follow .button-type{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+#choose-user-to-follow select, #follow-template ul{
+    max-width: 50%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.button-unfollow{
+    margin-left: 10%;
+    border-style: none;
+    background-color: white;
+    color: gray;
+}
