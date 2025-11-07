@@ -36,7 +36,7 @@ header h1{
 
 header #banner{
     height: auto;
-    width: auto;
+    width: 19em;
 }
 
 header nav{
@@ -237,5 +237,5 @@ article img{
     margin-left: 10%;
     border-style: none;
     background-color: white;
-    color: gray;
+    color: blue;
 }
